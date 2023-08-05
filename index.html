@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&display=swap"
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Forum&family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap"
+            rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark py-4">
+        <div class="container ">
+            <a class="navbar-brand" href="#">Weather  <i class="fa-solid fa-cloud-sun-rain"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item homeLi">
+                        <a class="nav-link active text-white" aria-current="page" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+
+        <div class="myHome">
+            <div class="homePhoto">
+                <img src="images/banner.png" class="w-100 ">
+            </div>
+
+            <div class="content w-75 mx-auto ">
+                <div class="searchBar d-flex justify-content-between align-items-center">
+                    <input type="text" class="form-control  mx-auto my-4 py-2" placeholder="Find Your Location"
+                        id="searchCity">
+                    <button class="btn btn-outline-light" type="submit" onclick="searchLocation()">Find</button>
+                </div>
+
+
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-md-4  today">
+                            <!-- <div class="head d-flex justify-content-between align-items-center py-2 bg-dark w-100">
+                                <h4>Friaday</h4>
+                                <h4>4August</h4>
+                            </div>
+                            <div class="temp">
+                                <h4>cairo</h4>
+                                <h1>26.4 C</h1>
+                                <img src="images/113.png" alt="">
+                            </div>
+                            <div class="weatherStatus">
+
+                            </div>
+                            <div class="down d-flex justify-content-evenly align-items-center py-3">
+                                <span>20%</span>
+                                <span>15Km/h</span>
+                                <span>East</span>
+                            </div> -->
+                        </div>
+                        <div class="col-md-4  towmorrow py-4 text-center">
+                            <!-- <div class="towmorrowName">
+                                <p>friday</p>
+                            </div>
+                            <div class="towmorrowIcon py-2">
+
+                            </div>
+                            <div class="towmorrowTemp py-2">
+                                <h3>18.5oC</h3>
+                                <p><small>12.3</small> </p>
+                            </div>
+                            <div class="towmorrowStatus py-2">
+                                <p>Moderate rain</p>
+                            </div> -->
+                        </div>
+                        <div class="col-md-4  afTowmorrow py-4 text-center">
+                            <!-- <div class="aftowmorrowName">
+                                <p>friday</p>
+                            </div>
+                            <div class="aftowmorrowIcon py-2">
+
+                            </div>
+                            <div class="aftowmorrowTemp py-2">
+                                <h3>18.5oC</h3>
+                                <p><small>12.3</small> </p>
+                            </div>
+                            <div class="aftowmorrowStatus py-2">
+                                <p>Moderate rain</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jojo.js"></script>
+</body>
+
+</html>
